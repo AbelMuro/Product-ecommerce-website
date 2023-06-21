@@ -1,0 +1,21 @@
+.container{
+    width: 100%;
+    padding: 41px 0px 47px 0px
+}
+
+.links{
+    display: flex;
+    gap: 33px;
+    align-items: center;
+}
+
+.logoIcon{
+    width: 137.5px;
+    height: auto;
+    object-fit: contain;
+    
+}
+
+.link{
+    list-style-type: none;
+}
