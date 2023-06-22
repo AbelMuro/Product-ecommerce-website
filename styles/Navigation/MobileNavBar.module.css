@@ -1,0 +1,81 @@
+.container{
+    height: 68px;
+    padding: 0px 24px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #FFFFFF;
+}
+
+.hamburger_and_logo{
+    display: flex;
+    align-items: center;
+    gap: 16px;
+}
+
+.hamburger, .logo, .profile, .cart{
+    list-style-type: none;
+}
+
+
+.hamburgerIcon{
+    width: 16px;
+    height: 15px;
+    mask-image: url('../../public/Icons/icon-menu.svg');
+    -webkit-image: url('../../public/Icons/icon-menu.svg');
+    mask-size: 16px 15px;
+    -webkit-mask-size: 16px 15px;
+    mask-repeat: no-repeat;
+    -webkit-mask-repeat: no-repeat;
+    background-color: #69707D;
+    cursor: pointer;
+}
+
+.hamburgerIcon:hover{
+    background-color: #1D2026;
+}
+
+.logoIcon{
+    width: 137.5px;
+    height: 20px;
+}
+
+.cart_and_profile {
+    display: flex;
+    align-items: center;
+    gap: 22.18px;
+}
+
+.cart, .profile{
+    list-style-type: none;
+}
+
+.cartIcon{
+    width: 22px;
+    height: 20px;
+    mask-image: url('../../public/Icons/icon-cart.svg');
+    -webkit-image: url('../../public/Icons/icon-cart.svg');
+    mask-size: 22px 20px;
+    -webkit-mask-size: 22px 20px;
+    mask-repeat: no-repeat;
+    -webkit-mask-repeat: no-repeat;
+    background-color: #69707D;
+    cursor: pointer;
+}
+
+.cartIcon:hover{
+    background-color: #1D2026;
+}
+
+.profileIcon{
+    width: 28px;
+    height: 28px;
+    border-radius: 100%;
+    border: 2px solid transparent;
+    cursor: pointer;
+}
+
+.profileIcon:hover{
+    border: 2px solid #FF7E1B;
+}
+

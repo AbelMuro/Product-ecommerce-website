@@ -2,3 +2,15 @@
     width: 1110px;
     margin: auto;
 }
+
+@media(max-width: 1200px){
+    .container{
+        width: 90%;
+    }
+}
+
+@media(max-width: 670px){
+    .container{
+        width: 100%;
+    }
+}
