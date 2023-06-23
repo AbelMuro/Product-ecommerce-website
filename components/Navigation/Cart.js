@@ -34,9 +34,9 @@ export default function Cart() {
             <h1 className={styles.title}>
                 Cart
             </h1>
-            {products.map((product) => {
+            {products.map((product, i) => {
                 return(
-                    <section className={styles.product}>
+                    <section className={styles.product} key={i}>
                         <Image src={`/Images/wh.png}`} 
                             width='0' height='0' 
                             alt='product image' 

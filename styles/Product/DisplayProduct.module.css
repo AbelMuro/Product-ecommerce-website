@@ -1,6 +1,28 @@
 .container{
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
+    gap: 125px;
     width: 100%;
+    margin-top: 90px
+}
+
+@media(max-width: 1110px){
+    .container{
+        gap: 80px;
+    }
+}
+
+@media(max-width: 800px){
+    .container{
+        gap: 40px
+    }
+}
+
+@media(max-width: 670px){
+    .container{
+        margin-top: 0px;
+        flex-direction: column;
+        gap: 0px;
+    }
 }

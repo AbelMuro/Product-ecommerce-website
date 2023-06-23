@@ -1,0 +1,65 @@
+.container{
+    position: relative;
+}
+
+.image{
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+    display: block;
+}
+
+.leftArrow, .rightArrow{
+    width: 10px;
+    height: 10px;
+    mask-size: 8px 12px;
+    -webkit-mask-size: 8px 12px;
+    mask-repeat: no-repeat;
+    -webkit-mask-repeat: no-repeat;
+    mask-position: center;
+    -webkit-mask-position: center;
+    background-color: black;
+}
+
+.leftArrow:hover, .rightArrow:hover{
+    background-color: #FF7E1B;
+}
+
+
+.leftArrow{
+    mask-image: url('../../public/Icons/icon-previous.svg');
+    -webkit-mask-image: url('../../public/Icons/icon-previous.svg');
+}
+
+.rightArrow{
+    mask-image: url('../../public/Icons/icon-next.svg');
+    -webkit-mask-image: url('../../public/Icons/icon-next.svg');
+}
+
+.nextButton, .prevButton{
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    border-radius: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    cursor: pointer;
+    z-index: var(--far);
+}
+
+.prevButton{
+    top: 0px;
+    bottom: 0px;
+    margin: auto;
+    left: 16px;
+}
+
+.nextButton{
+    top: 0px;
+    bottom: 0px;
+    margin: auto;
+    right: 16px;
+}
+

@@ -9,6 +9,7 @@
     bottom: -270px;
     left: -180px;
     padding-bottom: 32px;
+    z-index: var(--close);
 }
 
 .title{
