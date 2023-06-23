@@ -1,12 +1,21 @@
 import styles from '../../styles/Navigation/NavBar.module.css';
 import Image from 'next/image';
+import Cart from './Cart';
 import MobileNavBar from './MobileNavBar';
 import useMediaQuery from '../../hooks/useMediaQuery';
+import {useDispatch, useSelector} from 'react-redux';
 
 export default function NavBar(){
     const mobile = useMediaQuery('(max-width: 670px)');
+    const dispatch = useDispatch();
+    const open = useSelector(state => state.openCart);
+    console.log(open);
 
-    return mobile ? <MobileNavBar/> :
+    const openCart = () => {
+        dispatch({type: 'open cart', open: !open})
+    }
+
+    return mobile ? <MobileNavBar openCart={openCart}/> :
         <nav className={styles.container}>
             <ul className={styles.links}>
                 <li className={styles.logo}>
@@ -29,14 +38,14 @@ export default function NavBar(){
                 </li>
             </ul>
             <ul className={styles.cart_and_profile}>
-                <li className={styles.cart}>
+                <li className={styles.cart} onClick={openCart}>
                     <div src={'/Icons/icon-cart.svg'} className={styles.cartIcon}></div>
                 </li>
                 <li className={styles.profile}>
                     <img src={'/Images/image-avatar.png'} className={styles.profileIcon} alt={'profile icon'}/>
                 </li>
+                <Cart/>
             </ul>
-
         </nav>
     
 } 

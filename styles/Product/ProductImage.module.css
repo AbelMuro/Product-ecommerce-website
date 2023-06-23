@@ -1,0 +1,22 @@
+.container{
+    margin: 90px auto 132px auto;
+    display: grid;
+    grid-template-columns: repeat(4, 88px);
+    column-gap: 31px;
+    row-gap: 32px;
+}
+
+.choosenImage{
+    width: 445px;
+    height: auto;
+    object-fit: contain;
+    border-radius: 15px;
+    grid-column: 1/5;
+}
+
+.thumbnails{
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+    cursor: pointer;
+}

@@ -1,0 +1,60 @@
+.overlay{
+    width: 0px;
+    height: 100vh;
+    position: absolute;
+    top: 0px;
+    left: 0;
+    right: 0;
+    background-color: transparent;
+}
+
+.dialog{
+    display: none;
+    overflow: hidden;
+    width: 0px;
+    height: 100vh;
+    background-color: white;
+    padding: 0px;
+}
+
+.links{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.link, .close{
+    list-style-type: none;
+}
+
+.link{
+    color: #1D2026;
+    font-size: 18px;
+    font-family: var(--font);
+    font-weight: 700;
+    line-height: 26px;
+    cursor: pointer;
+    width: 100px;
+}
+
+.link:hover{
+    color: #69707D;
+}
+
+.closeIcon{
+    width: 13.5px;
+    height: 14.5px;
+    mask-image: url('../../public/Icons/icon-close.svg');
+    -webkit-mask-image: url('../../public/Icons/icon-close.svg');
+    mask-size: 13.5px 13.5px;
+    -webkit-mask-size: 13.5px 13.5px;
+    mask-repeat: no-repeat;
+    -webkit-mask-repeat: no-repeat;
+    background-color: #69707D;
+    margin-bottom: 33.78px;
+    cursor: pointer;
+}
+
+.closeIcon:hover{
+    background-color: #1D2026;
+}

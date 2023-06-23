@@ -40,6 +40,7 @@
 }
 
 .cart_and_profile{
+    position: relative;
     display: flex;
     gap: 46.18px;
     align-items: center;
