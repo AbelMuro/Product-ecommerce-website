@@ -19,7 +19,9 @@ export default function ProductImageMobile({images}) {
     }
 
     const previousImage = () => {
+        //set fade out class
         setCurrentImage()
+        //set fade in class
     }
 
     useEffect(() => {
