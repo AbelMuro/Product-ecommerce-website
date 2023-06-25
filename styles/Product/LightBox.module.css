@@ -1,0 +1,134 @@
+.overlay{
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100vh;
+    background-color: transparent;
+    z-index: var(--closest);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.container{
+    display: grid;
+    grid-template-columns: 140.5px 88.5px 88.5px 140.5px;
+    row-gap: 40px;
+    column-gap: 31px;
+    opacity: 0;
+}
+
+.container_choosenImage{
+    border-radius: 15px;
+    position: relative;
+    grid-column: 1/5;
+    background-color: rgb(211, 211, 211);
+}
+
+.choosenImage{
+    width: 100%;
+    height: 550px;
+    border-radius: 15px;
+    opacity: 1;
+    display: block;
+}
+
+.overlayThumbnail{
+    border-radius: 10px;
+    overflow: hidden;
+    border: 2px solid transparent;
+    cursor: pointer;
+    background-color: white;
+    background-clip: content-box;
+}
+
+.overlayThumbnail:hover .thumbnails{
+    opacity: 0.75;
+}
+
+.overlayThumbnail:nth-child(2) {
+    justify-self: flex-end;
+}
+
+.overlayThumbnail:nth-child(5) {
+    justify-self: flex-start;
+}
+
+.thumbnails{
+    width: 90px;
+    height: 90px;
+    display: block;
+}
+
+.whiteButton{
+    width: 56px;
+    height: 56px;
+    border-radius: 100%;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 0px;
+    bottom: 0px;
+    margin: auto;
+    cursor: pointer;
+}
+
+.whiteButton:hover span{
+    background-color: #FF7E1B;
+}
+
+.whiteButton:nth-child(1){
+    left: -28px;
+}
+
+.whiteButton:nth-child(3){
+    right: -28px;
+}
+
+.leftArrowIcon, .rightArrowIcon {
+    width: 10px;
+    height: 16px;
+    mask-repeat: no-repeat;
+    -webkit-mask-repeat: no-repeat;
+}
+
+.leftArrowIcon{
+    mask-size: 10px 16px;
+    -webkit-mask-size: 10px 16px;
+    mask-image: url('../../public/Icons/icon-previous.svg');
+    -webkit-mask-image: url('../../public/Icons/icon-previous.svg');
+    background-color: #1D2026;
+}
+
+.rightArrowIcon{
+    mask-size: 11px 16px;
+    -webkit-mask-size: 11px 16px;
+    mask-image: url('../../public/Icons/icon-next.svg');
+    -webkit-mask-image: url('../../public/Icons/icon-next.svg');
+    background-color: #1D2026;
+}
+
+
+.closeIcon{
+    position: absolute;
+    right: 0px;
+    top: -34px;
+    width: 20px;
+    height: 20px;
+    mask-image: url('../../public/Icons/icon-close.svg');
+    -webkit-mask-image: url('../../public/Icons/icon-close.svg');
+    mask-size: 20px 20px;
+    -webkit-mask-size: 20px 20px;
+    mask-repeat: no-repeat;
+    -webkit-mask-repeat: no-repeat;
+    background-color: #FFFFFF;
+    cursor: pointer;
+}
+
+.closeIcon:hover{
+    background-color: #FF7E1B;
+}

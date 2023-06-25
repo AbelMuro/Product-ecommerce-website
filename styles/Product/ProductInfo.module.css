@@ -98,7 +98,8 @@
 }
 
 .cartButton:disabled{
-    background-color: #FFAB6A;
+    background-color: #e2dfdc;
+    box-shadow: none;
     cursor: not-allowed;
 }
 

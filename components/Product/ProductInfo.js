@@ -30,6 +30,7 @@ export default function ProductInfo({product}) {
         }
 
         dispatch({type: 'add item', item: newItem})
+        dispatch({type: 'open cart', open: true});
     }
 
     return(

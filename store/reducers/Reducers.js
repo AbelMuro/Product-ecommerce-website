@@ -18,6 +18,15 @@ function cartReducer(items = [], action) {
                 return updatedList;
             else
                 return [...items, action.item];
+
+        case 'delete item':
+                const itemToRemove = action.item;
+                return items.filter((item) => {
+                    if(item.name === itemToRemove)
+                        return false;
+                    else   
+                        return true;
+                })
         default: 
             return items;
     }

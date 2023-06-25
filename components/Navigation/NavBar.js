@@ -9,7 +9,6 @@ export default function NavBar(){
     const mobile = useMediaQuery('(max-width: 670px)');
     const dispatch = useDispatch();
     const open = useSelector(state => state.openCart);
-    console.log(open);
 
     const openCart = () => {
         dispatch({type: 'open cart', open: !open})
